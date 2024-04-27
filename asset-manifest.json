@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/joakimwennergren.github.io/static/css/main.6133332c.css",
+    "main.js": "/joakimwennergren.github.io/static/js/main.57059972.js",
+    "static/js/453.c81f45ab.chunk.js": "/joakimwennergren.github.io/static/js/453.c81f45ab.chunk.js",
+    "static/media/svampjakt.png": "/joakimwennergren.github.io/static/media/svampjakt.41329dd31bc83d5512ae.png",
+    "static/media/crafttoday.png": "/joakimwennergren.github.io/static/media/crafttoday.8ba584d61dace01b54f3.png",
+    "static/media/logo.png": "/joakimwennergren.github.io/static/media/logo.ffd99b5166b80bd1dcfe.png",
+    "static/media/clouds.jpg": "/joakimwennergren.github.io/static/media/clouds.5ac7496ab03e39260fe6.jpg",
+    "static/media/tilio.png": "/joakimwennergren.github.io/static/media/tilio.d3826d4f53b95fe89c7e.png",
+    "index.html": "/joakimwennergren.github.io/index.html",
+    "main.6133332c.css.map": "/joakimwennergren.github.io/static/css/main.6133332c.css.map",
+    "main.57059972.js.map": "/joakimwennergren.github.io/static/js/main.57059972.js.map",
+    "453.c81f45ab.chunk.js.map": "/joakimwennergren.github.io/static/js/453.c81f45ab.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6133332c.css",
+    "static/js/main.57059972.js"
+  ]
+}
