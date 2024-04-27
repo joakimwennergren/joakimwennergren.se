@@ -13,6 +13,7 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
+import logo from "../static/logo.png"
 
 const pages = ['Hem', 'Vad vi erbjuder', ' Tidigare projekt', 'Om oss', 'Kontakt'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -40,24 +41,11 @@ function ResponsiveAppBar() {
         <AppBar position="static" sx={{ backgroundColor: "#f0f0f0", color: "black" }} elevation={0}>
             <Container>
                 <Toolbar disableGutters>
-                    <Typography
-                        variant="h6"
-                        noWrap
-                        component="a"
-                        href="#app-bar-with-responsive-menu"
-                        sx={{
-                            mr: 2,
-                            display: { xs: 'none', md: 'flex' },
-                            fontFamily: 'monospace',
-                            fontWeight: 700,
-                            fontSize: 24,
-                            letterSpacing: '.3rem',
-                            color: 'orange',
-                            textDecoration: 'none',
-                        }}
-                    >
-                        Databeams
-                    </Typography>
+                    <img src={logo} style={{
+                        width: 200,
+                        marginBottom: 10,
+                        marginTop: 10
+                    }} />
 
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                         <IconButton
@@ -85,7 +73,7 @@ function ResponsiveAppBar() {
                             open={Boolean(anchorElNav)}
                             onClose={handleCloseNavMenu}
                             sx={{
-                                display: { xs: 'block', md: 'none' },
+                                display: { xs: 'block', md: 'none', marginRight: 10 },
                             }}
                         >
                             {pages.map((page) => (
@@ -123,7 +111,7 @@ function ResponsiveAppBar() {
                                 onClick={() => {
                                     window.location.href = "#" + page
                                 }}
-                                sx={{ my: 2, color: 'black', display: 'block' }}
+                                sx={{ my: 2, color: 'black', display: 'block', marginRight: 2, marginTop: 5 }}
                             >
                                 {page}
                             </Button>
