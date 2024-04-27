@@ -12,6 +12,8 @@ import CrLogo from "./static/projects/cr-logo.jpg"
 import Development from "./static/development.png"
 import Design from "./static/design-thinking.png"
 import Cloud from "./static/clouds.png"
+import Mikbits from "./static/projects/mikbits.jpg";
+import Tumblina from "./static/projects/tumblina.jpg"
 import Shield from "./static/shield.png"
 
 function App() {
@@ -67,9 +69,11 @@ function App() {
         </Container>
 
         <Container sx={{ display: "flex", flexDirection: "row", justifyContent: "space-between" }}>
-          <img src={BitsAndDivs} style={{ width: 256, height: 128 }} />
+          <img src={BitsAndDivs} style={{ width: 280, height: 128 }} />
           <img src={CraftToday} style={{ width: 128, height: 128 }} />
           <img src={Tilio} style={{ width: 128, height: 128 }} />
+          <img src={Mikbits} style={{ width: 128, height: 128 }} />
+          <img src={Tumblina} style={{ width: 128, height: 148, marginTop: -20 }} />
         </Container>
       </Box>
       <Container id="Kontakt" sx={{ display: "flex", flexDirection: "row" }}>
