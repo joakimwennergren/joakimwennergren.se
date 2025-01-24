@@ -38,15 +38,9 @@ function ResponsiveAppBar() {
     };
 
     return (
-        <AppBar position="static" sx={{ backgroundColor: "#f0f0f0", color: "black" }} elevation={0}>
+        <AppBar position="static" sx={{ backgroundColor: "#fff", color: "black" }} elevation={0}>
             <Container>
                 <Toolbar disableGutters>
-                    <img src={logo} style={{
-                        width: 200,
-                        marginBottom: 10,
-                        marginTop: 10
-                    }} />
-
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                         <IconButton
                             size="large"
@@ -102,7 +96,7 @@ function ResponsiveAppBar() {
                             textDecoration: 'none',
                         }}
                     >
-                        LOGO
+                        Databeams.se
                     </Typography>
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                         {pages.map((page) => (

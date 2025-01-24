@@ -21,38 +21,38 @@ function App() {
     <>
       <ResponsiveAppBar />
       <Header />
-      <Container id="Vad%20vi%20erbjuder" sx={{ display: "flex", flexDirection: "row" }}>
-        <Box sx={{ paddingTop: 10 }}>
-          <Typography variant="h4">Vad vi erbjuder</Typography>
-          <p style={{ width: "70%" }}>Ett komplett paket där vi utvecklar eran produkt tillsammans med er vare sig det gäller en hemsida, mobil applikation eller ett helt datorsystem</p>
-        </Box>
-      </Container>
-      <Container sx={{ paddingTop: 10, display: "flex", flexDirection: "row", justifyContent: "space-between" }}>
-        <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
-          <img src={Development} style={{ width: 128, marginBottom: 10 }} />
-          <Typography>Systemutveckling</Typography>
-        </Box>
-        <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
-          <img src={Design} style={{ width: 128, marginBottom: 10 }} />
-          <Typography>Design</Typography>
-        </Box>
-        <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
-          <img src={Cloud} style={{ width: 128, marginBottom: 10 }} />
-          <Typography>Drifttagning i molnet</Typography>
-        </Box>
-        <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
-          <img src={Shield} style={{ width: 128, marginBottom: 10 }} />
-          <Typography>Säkerhet</Typography>
-        </Box>
-      </Container>
-      <Container id="Om%20oss" sx={{ display: "flex", flexDirection: "row" }}>
-        <Box sx={{ paddingBottom: 10, paddingTop: 10 }}>
-          <Typography variant="h4">Om oss</Typography>
-          <p>Joakim Wennergren är en systemutvecklare med flera år i branchen.</p>
-        </Box>
-      </Container>
-
+      <Box sx={{ marginBottom: 20, }}>
+        <Container id="Vad%20vi%20erbjuder" sx={{ display: "flex", flexDirection: "row" }}>
+          <Box sx={{ paddingTop: 10 }}>
+          </Box>
+        </Container>
+        <Container sx={{ paddingTop: 10, display: "flex", flexDirection: "row", justifyContent: "space-between" }}>
+          <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
+            <img src={Development} style={{ width: 128, marginBottom: 10 }} />
+            <Typography>Systemutveckling</Typography>
+          </Box>
+          <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
+            <img src={Design} style={{ width: 128, marginBottom: 10 }} />
+            <Typography>Design</Typography>
+          </Box>
+          <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
+            <img src={Cloud} style={{ width: 128, marginBottom: 10 }} />
+            <Typography>Drifttagning i molnet</Typography>
+          </Box>
+          <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
+            <img src={Shield} style={{ width: 128, marginBottom: 10 }} />
+            <Typography>Säkerhet</Typography>
+          </Box>
+        </Container>
+      </Box>
       <Box sx={{ background: "#f0f0f0", padding: 10, }}>
+        <Container id="Om%20oss" sx={{ display: "flex", flexDirection: "row" }}>
+          <Box sx={{ paddingBottom: 10, paddingTop: 10 }}>
+          </Box>
+        </Container>
+      </Box>
+
+      <Box sx={{ background: "#fff", padding: 10, }}>
         <Container>
           <Typography variant="h4" sx={{ marginBottom: 2 }}>
             Choord ruler
@@ -61,13 +61,12 @@ function App() {
           <img src={Cr} style={{ width: "100%", marginBottom: 10 }} />
         </Container>
       </Box>
-      <Box sx={{ background: "white", paddingTop: 10, }}>
+      <Box sx={{ background: "#fff", padding: 10, }}>
         <Container>
           <Typography variant="h4" sx={{ marginBottom: 5 }}>
             Logotyper
           </Typography>
         </Container>
-
         <Container sx={{ display: "flex", flexDirection: "row", justifyContent: "space-between" }}>
           <img src={BitsAndDivs} style={{ width: 280, height: 128 }} />
           <img src={CraftToday} style={{ width: 128, height: 128 }} />
@@ -76,14 +75,6 @@ function App() {
           <img src={Tumblina} style={{ width: 128, height: 148, marginTop: -20 }} />
         </Container>
       </Box>
-      <Container id="Kontakt" sx={{ display: "flex", flexDirection: "row" }}>
-        <Box sx={{ paddingBottom: 10, paddingTop: 10 }}>
-          <Typography variant="h4">Kontakta oss</Typography>
-          <p>Joakim.wennergren@databeams.se</p>
-          <p>noemi.nygard@databeams.se</p>
-        </Box>
-      </Container>
-
     </>
   );
 }
