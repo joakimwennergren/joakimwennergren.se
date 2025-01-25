@@ -3,10 +3,7 @@ import ResponsiveAppBar from './components/appbar';
 import Header from './components/header';
 import './App.css';
 import Cr from "./static/projects/cr.jpg"
-import Development from "./static/development.png"
-import Design from "./static/design-thinking.png"
-import Cloud from "./static/clouds.png"
-import Shield from "./static/shield.png"
+import Tumblina from "./static/projects/tumblina.png"
 
 function App() {
   return (
@@ -21,16 +18,22 @@ function App() {
           </Box>
         </Container>
       </Box>
-
-
-
       <Box sx={{ background: "#f0f0f0", padding: 10, }}>
         <Container>
           <Typography variant="h4" sx={{ marginBottom: 2 }}>
-            Choord ruler
+            ChordRuler
           </Typography>
-          <p>ChoordRuler är ett hjälpmedel för musiker att hitta ackord som passar ihop. Skrivet i Swift för macOS.</p>
+          <p></p>
           <img src={Cr} style={{ width: "100%", marginBottom: 10 }} />
+        </Container>
+      </Box>
+      <Box sx={{ background: "#fff", padding: 10, }}>
+        <Container>
+          <Typography variant="h4" sx={{ marginBottom: 2 }}>
+            Tumblina
+          </Typography>
+          <p></p>
+          <img src={Tumblina} style={{ width: "30%", }} />
         </Container>
       </Box>
     </>
