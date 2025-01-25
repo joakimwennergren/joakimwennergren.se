@@ -15,8 +15,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import logo from "../static/logo.png"
 
-const pages = ['Hem', 'Vad vi erbjuder', ' Tidigare projekt', 'Om oss', 'Kontakt'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const pages: string[] = [];
 
 function ResponsiveAppBar() {
     const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
@@ -41,6 +40,7 @@ function ResponsiveAppBar() {
         <AppBar position="static" sx={{ backgroundColor: "#fff", color: "black" }} elevation={0}>
             <Container>
                 <Toolbar disableGutters>
+                    <Typography component="h1" sx={{ marginTop: 2, fontSize: 28, marginRight: 5, marginBottom: 2 }}>Databeams</Typography>
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                         <IconButton
                             size="large"
