@@ -1,27 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.580175eb.css",
-    "main.js": "/static/js/main.fbcb9892.js",
+    "main.js": "/static/js/main.a73c5f9f.js",
     "static/js/453.c81f45ab.chunk.js": "/static/js/453.c81f45ab.chunk.js",
     "static/media/banner.jpg": "/static/media/banner.62d05c1be4b9ea67aba0.jpg",
-    "static/media/crafttoday.png": "/static/media/crafttoday.8ba584d61dace01b54f3.png",
     "static/media/cr.jpg": "/static/media/cr.54a0fe0ba50f9d36d915.jpg",
-    "static/media/mikbits.jpg": "/static/media/mikbits.9a62a1807322b46fd193.jpg",
     "static/media/Montserrat-VariableFont_wght.ttf": "/static/media/Montserrat-VariableFont_wght.7e687123cd4528224ce5.ttf",
-    "static/media/tilio.png": "/static/media/tilio.d3826d4f53b95fe89c7e.png",
-    "static/media/tumblina.jpg": "/static/media/tumblina.6178c9afe6a6427f8050.jpg",
-    "static/media/design-thinking.png": "/static/media/design-thinking.4fae82910c88a96174e7.png",
-    "static/media/logo.png": "/static/media/logo.4f3f33b199756d85c7cb.png",
-    "static/media/shield.png": "/static/media/shield.c0bd7ef7fc5e2505cc76.png",
-    "static/media/development.png": "/static/media/development.9b21f06bf040707b11dd.png",
-    "static/media/clouds.png": "/static/media/clouds.15eb556cd941ec7fc2b4.png",
     "index.html": "/index.html",
     "main.580175eb.css.map": "/static/css/main.580175eb.css.map",
-    "main.fbcb9892.js.map": "/static/js/main.fbcb9892.js.map",
+    "main.a73c5f9f.js.map": "/static/js/main.a73c5f9f.js.map",
     "453.c81f45ab.chunk.js.map": "/static/js/453.c81f45ab.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.580175eb.css",
-    "static/js/main.fbcb9892.js"
+    "static/js/main.a73c5f9f.js"
   ]
 }
