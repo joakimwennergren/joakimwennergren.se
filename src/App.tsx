@@ -10,7 +10,7 @@ function App() {
     <>
       <ResponsiveAppBar />
       <Header />
-      <Box sx={{ background: "#fff", padding: 10, }}>
+      <Box sx={{ background: "#fff", padding: { xs: 2, md: 10 } }}>
         <Container id="about" sx={{ display: "flex", flexDirection: "row" }}>
           <Box>
             <Typography variant="h4">About</Typography>
@@ -18,9 +18,9 @@ function App() {
           </Box>
         </Container>
       </Box>
-      <Box sx={{ background: "#f0f0f0", padding: 10, }}>
+      <Box sx={{ background: "#f0f0f0", padding: { xs: 2, md: 10 } }}>
         <Container>
-          <Typography variant="h4" sx={{ marginBottom: 5 }}>Projects</Typography>
+          <Typography variant="h4" sx={{ marginBottom: 2 }}>Projects</Typography>
           <Typography variant="h5" sx={{ marginBottom: 2, color: "steelblue" }}>
             <a href="https://github.com/joakimwennergren/ChordRuler" style={{ textDecoration: "none", color: "steelblue" }}>ChordRuler</a>
           </Typography>
@@ -30,10 +30,12 @@ function App() {
           <p>
             Designed for musicians of all levels, ChordRuler simplifies the process of finding chords that fit perfectly together. Whether you're composing, improvising, or learning.
           </p>
-          <img src={Cr} style={{ width: "100%", marginBottom: 10 }} />
+          <Box sx={{ marginLeft: { xs: 0, md: -6 } }}>
+            <img src={Cr} style={{ width: "100%", marginBottom: 10 }} />
+          </Box>
         </Container>
       </Box>
-      <Box sx={{ background: "#fff", padding: 10, }}>
+      <Box sx={{ background: "#fff", padding: { xs: 2, md: 10 } }}>
         <Container>
           <Typography variant="h5" sx={{ marginBottom: 2, color: "steelblue" }}>
             <a href="https://github.com/joakimwennergren/Entropy" style={{ textDecoration: "none", color: "steelblue" }}>Entropy</a>
@@ -43,7 +45,10 @@ function App() {
             Can display GLTF/OBJ models and some basic 2D shapes.
           </p>
           <p>Works on Linux, Windows, MacOS, iOS and Android</p>
-          <img src={Entropy} style={{ width: "100%", marginBottom: 10 }} />
+          <Box sx={{ marginLeft: { xs: 0, md: -7 } }}>
+            <img src={Entropy} style={{ width: "100%", marginBottom: 10 }} />
+          </Box>
+
         </Container>
       </Box>
     </>
