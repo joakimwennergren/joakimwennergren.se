@@ -40,7 +40,7 @@ function ResponsiveAppBar() {
         <AppBar position="static" sx={{ backgroundColor: "#fff", color: "black" }} elevation={0}>
             <Container>
                 <Toolbar disableGutters>
-                    <Typography component="h1" sx={{ marginTop: 2, fontSize: 28, marginRight: 5, marginBottom: 2 }}>Databeams</Typography>
+                    <Typography variant="h4" sx={{ marginTop: 2, marginRight: 5, marginBottom: 2, display: { xs: 'none', md: 'flex' }, }}>Databeams</Typography>
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                         <IconButton
                             size="large"
@@ -81,7 +81,7 @@ function ResponsiveAppBar() {
                     </Box>
 
                     <Typography
-                        variant="h5"
+                        variant="h4"
                         noWrap
                         component="a"
                         href="#app-bar-with-responsive-menu"
@@ -89,14 +89,11 @@ function ResponsiveAppBar() {
                             mr: 2,
                             display: { xs: 'flex', md: 'none' },
                             flexGrow: 1,
-                            fontFamily: 'monospace',
-                            fontWeight: 700,
-                            letterSpacing: '.3rem',
                             color: 'inherit',
                             textDecoration: 'none',
                         }}
                     >
-                        Databeams.se
+                        Databeams
                     </Typography>
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                         {pages.map((page) => (
