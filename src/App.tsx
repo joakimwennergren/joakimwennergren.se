@@ -2,7 +2,7 @@ import { Box, Container, Typography } from "@mui/material";
 import ResponsiveAppBar from './components/appbar';
 import Header from './components/header';
 import Cr from "./static/projects/chordruler.png"
-import Entropy from "./static/projects/entropy.png";
+import Svampjakt from "./static/projects/svampjakt2.jpg";
 import './App.css';
 
 function App() {
@@ -35,20 +35,32 @@ function App() {
           </Box>
         </Container>
       </Box>
-      <Box sx={{ background: "#fff", padding: { xs: 2, md: 10 } }}>
+      <Box sx={{ background: "#fff", padding: { xs: 2, md: 10 } }} id="svampjakt2">
         <Container>
           <Typography variant="h5" sx={{ marginBottom: 2, color: "steelblue" }}>
-            <a href="https://github.com/joakimwennergren/Entropy" style={{ textDecoration: "none", color: "steelblue" }}>Entropy</a>
+            <a href="https://databeams.se#svampjakt2" style={{ textDecoration: "none", color: "steelblue" }}>Svampjakt 2</a>
           </Typography>
-          <p>
-            Game engine made with Vulkan and C++. Scripting capabilities with Lua.
-            Can display GLTF/OBJ models and some basic 2D shapes.
-          </p>
-          <p>Works on Linux, Windows, MacOS, iOS and Android</p>
-          <Box sx={{ marginLeft: { xs: 0, md: -7 } }}>
-            <img src={Entropy} style={{ width: "100%", marginBottom: 10 }} />
+          <Box >
+            <img src={Svampjakt} style={{ width: "90%", marginBottom: 10 }} />
           </Box>
-
+          <Typography variant="h4">Privacy Policy for Svampjakt 2</Typography>
+          <p>Effective Date: 2025</p>
+          <Typography variant="h5">1. Introduction</Typography>
+          <p>Welcome to Svampjakt 2! Your privacy is important to us. This Privacy Policy explains how we collect, use, and protect your information when you use our game.</p>
+          <Typography variant="h5">2. Information We Collect</Typography>
+          <p>Personal Data: We do not collect any personal data unless explicitly provided by you.</p>
+          <Typography variant="h5">3. Data Sharing and Third Parties</Typography>
+          <p>We do not sell or rent your personal information.</p>
+          <Typography variant="h5">4. Children's Privacy</Typography>
+          <p>Svampjakt 2 is intended for general audiences. We do not knowingly collect personal data from children under 13. If we become aware of such data, we will delete it promptly.</p>
+          <Typography variant="h5">5. Data Security</Typography>
+          <p>We implement appropriate measures to protect your data. However, no method of transmission over the Internet is 100% secure.</p>
+          <Typography variant="h5">6. Your Rights</Typography>
+          <p>You have the right to request access to, correction of, or deletion of your data where applicable by law.</p>
+          <Typography variant="h5">7. Changes to This Privacy Policy</Typography>
+          <p>We may update this Privacy Policy from time to time. The latest version will always be available within the game or on our website.</p>
+          <Typography variant="h5">8. Contact Us</Typography>
+          <p>If you have any questions about this Privacy Policy, please contact us at: joakim.wennergren@databeams.se</p>
         </Container>
       </Box>
     </>
