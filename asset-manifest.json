@@ -1,19 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.580175eb.css",
-    "main.js": "/static/js/main.3ff87bc8.js",
-    "static/js/453.c81f45ab.chunk.js": "/static/js/453.c81f45ab.chunk.js",
-    "static/media/svampjakt2.jpg": "/static/media/svampjakt2.b66a439276a140c9eaff.jpg",
-    "static/media/banner.jpg": "/static/media/banner.62d05c1be4b9ea67aba0.jpg",
-    "static/media/Montserrat-VariableFont_wght.ttf": "/static/media/Montserrat-VariableFont_wght.7e687123cd4528224ce5.ttf",
-    "static/media/chordruler.png": "/static/media/chordruler.6a8afb8d8fa9c686c905.png",
+    "main.css": "/static/css/main.b000bd8e.css",
+    "main.js": "/static/js/main.763dbc2e.js",
+    "static/js/488.f0e1fb31.chunk.js": "/static/js/488.f0e1fb31.chunk.js",
+    "static/media/joakim.jpg": "/static/media/joakim.17bf1ca5448c06e4ab9c.jpg",
+    "static/media/kontor.jpeg": "/static/media/kontor.b84b920cf4f9becc8885.jpeg",
     "index.html": "/index.html",
-    "main.580175eb.css.map": "/static/css/main.580175eb.css.map",
-    "main.3ff87bc8.js.map": "/static/js/main.3ff87bc8.js.map",
-    "453.c81f45ab.chunk.js.map": "/static/js/453.c81f45ab.chunk.js.map"
+    "main.b000bd8e.css.map": "/static/css/main.b000bd8e.css.map",
+    "main.763dbc2e.js.map": "/static/js/main.763dbc2e.js.map",
+    "488.f0e1fb31.chunk.js.map": "/static/js/488.f0e1fb31.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.580175eb.css",
-    "static/js/main.3ff87bc8.js"
+    "static/css/main.b000bd8e.css",
+    "static/js/main.763dbc2e.js"
   ]
 }
