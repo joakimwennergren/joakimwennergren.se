@@ -1,17 +1,36 @@
-import React from 'react';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router";
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { MetricType } from "web-vitals";
+import './index.css';
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+  },
+]);
+
+const root = document.getElementById("root");
+
+ReactDOM.createRoot(root as any).render(
+  <RouterProvider router={router} />
 );
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+
+const reportWebVitals = (onPerfEntry?: (metric: MetricType) => void) => {
+  if (onPerfEntry && onPerfEntry instanceof Function) {
+    import("web-vitals").then(({ onCLS, onINP, onFCP, onLCP, onTTFB }) => {
+      onCLS(onPerfEntry);
+      onINP(onPerfEntry);
+      onFCP(onPerfEntry);
+      onLCP(onPerfEntry);
+      onTTFB(onPerfEntry);
+    });
+  }
+};
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

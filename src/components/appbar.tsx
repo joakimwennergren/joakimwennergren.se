@@ -9,11 +9,8 @@ import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 //@ts-ignore
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import logo from "../static/logo.png"
 
 const pages: string[] = [];
 
@@ -79,7 +76,6 @@ function ResponsiveAppBar() {
                             ))}
                         </Menu>
                     </Box>
-
                     <Typography
                         variant="h4"
                         noWrap
