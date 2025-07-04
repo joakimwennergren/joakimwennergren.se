@@ -116,14 +116,14 @@ export default function BasicGrid() {
               <Paper sx={{ padding: 2, marginBottom: 2 }}>
                 <Typography component={'p'} sx={{ fontWeight: "bold", marginBottom: 1 }}>Poppy</Typography>
                 <AudioPlayer
-                  src={'https://joakimwennergren.se/static/music/poppy.wav'}
+                  src={'https://joakimwennergren.se/poppy.wav'}
                 // other props here
                 />
               </Paper>
               <Paper sx={{ padding: 2, marginBottom: 2 }}>
                 <Typography component={'p'} sx={{ fontWeight: "bold", marginBottom: 1 }}>Technobeat</Typography>
                 <AudioPlayer
-                  src={'https://joakimwennergren.se/static/music/technobeat.wav'}
+                  src={'https://joakimwennergren.se/technobeat.wav'}
                 // other props here
                 />
               </Paper>
