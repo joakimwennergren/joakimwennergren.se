@@ -123,7 +123,7 @@ export default function BasicGrid() {
               <Paper sx={{ padding: 2, marginBottom: 2 }}>
                 <Typography component={'p'} sx={{ fontWeight: "bold", marginBottom: 1 }}>Technobeat</Typography>
                 <AudioPlayer
-                  src={'https://joakimwennergren.se/static/music/techobeat.wav'}
+                  src={'https://joakimwennergren.se/static/music/technobeat.wav'}
                 // other props here
                 />
               </Paper>
