@@ -150,7 +150,7 @@ export default function Index() {
                     <Box>
                         {currentItems.map((item, index) => (
                             <Paper sx={{ padding: 2, marginBottom: 2 }}>
-                                <Typography component={'p'} sx={{ fontWeight: "bold" }}>{item.title}</Typography>
+                                <a href={item.link}><Typography component={'p'} sx={{ fontWeight: "bold" }}>{item.title}</Typography></a>
                                 <img src={item.image} style={{ width: "100%", marginBottom: 10 }}></img>
                                 <Typography component={'p'}>{item.description}</Typography>
                             </Paper>
@@ -168,11 +168,11 @@ export default function Index() {
                         <Box>
                             <Typography variant='h5' sx={{ fontWeight: "bold", marginBottom: 2, color: "#444", marginTop: -1 }}>Projekt</Typography>
                             {currentItems.map((item, index) => (
-                                <Paper sx={{ padding: 2, marginBottom: 2 }}>
-                                    <Typography component={'p'} sx={{ fontWeight: "bold" }}>{item.title}</Typography>
+                                <Box sx={{ marginBottom: 2 }}>
+                                    <a href={item.link} style={{ color: "steelblue", textDecoration: "none" }}><Typography component={'p'} sx={{ fontWeight: "bold", marginBottom: 1 }}>{item.title}</Typography></a>
                                     <img src={item.image} style={{ width: "100%", marginBottom: 10 }}></img>
                                     <Typography component={'p'}>{item.description}</Typography>
-                                </Paper>
+                                </Box>
                             ))}
                             <Pagination count={totalPages} page={currentProjectPage} onChange={handleChange} />
                         </Box>
