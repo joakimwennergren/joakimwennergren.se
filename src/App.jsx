@@ -9,6 +9,10 @@ import Joakim from "./static/joakim.jpg";
 import Snusdosa from "./static/projects/snusdosa.jpg";
 import Svampjakt from "./static/projects/svampjakt.jpg";
 import Textwatch from "./static/projects/Textklocka.jpg";
+import EntropyOld from "./static/projects/entropy_old.png";
+import SmartDisplay from "./static/projects/smartdisplay.jpg";
+import Phone from "./static/projects/phone.jpg";
+import LedMatrix from "./static/projects/ledmatrix.jpg";
 import Kontor from "./static/kontor.jpeg";
 import { Linkedin, GitHub, Mail, Music } from 'react-feather';
 import AudioPlayer from 'react-h5-audio-player';
@@ -77,13 +81,23 @@ export default function BasicGrid() {
             </Paper>
             <Paper sx={{ padding: 2, marginBottom: 2 }}>
               <Typography component={'p'} sx={{ fontWeight: "bold" }}>Entropy spelmotor</Typography>
-              <img src={Svampjakt} style={{ width: "100%", marginBottom: 10 }}></img>
+              <img src={EntropyOld} style={{ width: "100%", marginBottom: 10 }}></img>
               <Typography component={'p'}>En spelmotor skriven från grunden i C++. Scriptbar i C# och med vulkan API</Typography>
             </Paper>
-            <Paper sx={{ padding: 2 }}>
-              <Typography component={'p'} sx={{ fontWeight: "bold" }}>Textklocka</Typography>
-              <img src={Textwatch} style={{ width: "100%", marginBottom: 10 }}></img>
-              <Typography component={'p'}>En handledsklocka som visar tid med text.</Typography>
+            <Paper sx={{ padding: 2, marginBottom: 2 }}>
+              <Typography component={'p'} sx={{ fontWeight: "bold" }}>Phone</Typography>
+              <img src={Phone} style={{ width: "100%", marginBottom: 10 }}></img>
+              <Typography component={'p'}>En ombyggd telefon. 2G.</Typography>
+            </Paper>
+            <Paper sx={{ padding: 2, marginBottom: 2 }}>
+              <Typography component={'p'} sx={{ fontWeight: "bold" }}>Smart display</Typography>
+              <img src={SmartDisplay} style={{ width: "100%", marginBottom: 10 }}></img>
+              <Typography component={'p'}></Typography>
+            </Paper>
+            <Paper sx={{ padding: 2, marginBottom: 2 }}>
+              <Typography component={'p'} sx={{ fontWeight: "bold" }}>LED Matrix</Typography>
+              <img src={LedMatrix} style={{ width: "100%", marginBottom: 10 }}></img>
+              <Typography component={'p'}></Typography>
             </Paper>
             {/*}
               <Stack spacing={2}>
@@ -108,13 +122,23 @@ export default function BasicGrid() {
               </Paper>
               <Paper sx={{ padding: 2, marginBottom: 2 }}>
                 <Typography component={'p'} sx={{ fontWeight: "bold" }}>Entropy spelmotor</Typography>
-                <img src={Svampjakt} style={{ width: "100%", marginBottom: 10 }}></img>
+                <img src={EntropyOld} style={{ width: "100%", marginBottom: 10 }}></img>
                 <Typography component={'p'}>En spelmotor skriven från grunden i C++. Scriptbar i C# och med vulkan API</Typography>
               </Paper>
               <Paper sx={{ padding: 2, marginBottom: 2 }}>
-                <Typography component={'p'} sx={{ fontWeight: "bold" }}>Textklocka</Typography>
-                <img src={Textwatch} style={{ width: "100%", marginBottom: 10 }}></img>
-                <Typography component={'p'}>En handledsklocka som visar tid med text.</Typography>
+                <Typography component={'p'} sx={{ fontWeight: "bold" }}>Phone</Typography>
+                <img src={Phone} style={{ width: "100%", marginBottom: 10 }}></img>
+                <Typography component={'p'}>En ombyggd telefon. 2G.</Typography>
+              </Paper>
+              <Paper sx={{ padding: 2, marginBottom: 2 }}>
+                <Typography component={'p'} sx={{ fontWeight: "bold" }}>Smart display</Typography>
+                <img src={SmartDisplay} style={{ width: "100%", marginBottom: 10 }}></img>
+                <Typography component={'p'}></Typography>
+              </Paper>
+              <Paper sx={{ padding: 2, marginBottom: 2 }}>
+                <Typography component={'p'} sx={{ fontWeight: "bold" }}>LED Matrix</Typography>
+                <img src={LedMatrix} style={{ width: "100%", marginBottom: 10 }}></img>
+                <Typography component={'p'}></Typography>
               </Paper>
               {/*}
               <Stack spacing={2}>
@@ -215,7 +239,7 @@ export default function BasicGrid() {
             <AudioPlayer src={'https://joakimwennergren.se/poppy.wav'}
             />
           </Box>
-          <Box sx={{ marginBottom: 2 }}>
+          <Box sx={{}}>
             <Typography component={'p'} sx={{ fontWeight: "bold", marginBottom: 1 }}>Technobeat</Typography>
             <AudioPlayer src={'https://joakimwennergren.se/technobeat.wav'}
             />
@@ -236,7 +260,7 @@ export default function BasicGrid() {
   return (
     <>
       <Box sx={{ flexGrow: 1 }}>
-        <Grid container spacing={0}>
+        <Grid container spacing={0} sx={{ borderTop: { xs: "1px solid #ccc" } }} >
           <Grid size={2} sx={{ textAlign: 'center', padding: { xs: 2, md: 3 }, borderBottom: '1px solid #ccc', borderRight: '1px solid #ccc', display: 'flex', alignItems: 'center', }}>
           </Grid>
           <Grid size={4} sx={{
@@ -261,20 +285,13 @@ export default function BasicGrid() {
 
 
 
-        <Grid container>
-          <Grid size={4} sx={{ textAlign: 'center', padding: 1, borderBottom: '1px solid #ccc', display: 'flex', alignItems: 'center' }}>
-          </Grid>
-          <Grid size={4} sx={{ fontSize: 14, textAlign: 'center', padding: 3, }}>
-            Copyright &copy; 2025 Joakim Wennergren
-          </Grid>
-          <Grid size={'grow'} sx={{ textAlign: 'center', }}>
-            <Box></Box>
-          </Grid>
-        </Grid>
+        <Box sx={{ fontSize: 14, textAlign: 'center', padding: 4, }}>
+          Copyright &copy; 2025 Joakim Wennergren
+        </Box>
 
 
 
-      </Box>
+      </Box >
     </>
   );
 }
