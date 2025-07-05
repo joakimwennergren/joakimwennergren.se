@@ -161,6 +161,11 @@ export default function BasicGrid() {
                 />
               </Box>
               <Box sx={{ marginBottom: 2 }}>
+                <Typography component={'p'} sx={{ fontWeight: "bold", marginBottom: 1 }}>Moongatan</Typography>
+                <AudioPlayer src={'https://joakimwennergren.se/moongatan.wav'}
+                />
+              </Box>
+              <Box sx={{ marginBottom: 2 }}>
                 <Typography component={'p'} sx={{ fontWeight: "bold", marginBottom: 1 }}>Poppy</Typography>
                 <AudioPlayer src={'https://joakimwennergren.se/poppy.wav'}
                 />
@@ -168,6 +173,11 @@ export default function BasicGrid() {
               <Box sx={{ marginBottom: 2 }}>
                 <Typography component={'p'} sx={{ fontWeight: "bold", marginBottom: 1 }}>Technobeat</Typography>
                 <AudioPlayer src={'https://joakimwennergren.se/technobeat.wav'}
+                />
+              </Box>
+              <Box sx={{}}>
+                <Typography component={'p'} sx={{ fontWeight: "bold", marginBottom: 1 }}>Rich on water</Typography>
+                <AudioPlayer src={'https://joakimwennergren.se/rich_on_water.wav'}
                 />
               </Box>
               {/*}
@@ -235,13 +245,23 @@ export default function BasicGrid() {
             />
           </Box>
           <Box sx={{ marginBottom: 2 }}>
+            <Typography component={'p'} sx={{ fontWeight: "bold", marginBottom: 1 }}>Moongatan</Typography>
+            <AudioPlayer src={'https://joakimwennergren.se/moongatan.wav'}
+            />
+          </Box>
+          <Box sx={{ marginBottom: 2 }}>
             <Typography component={'p'} sx={{ fontWeight: "bold", marginBottom: 1 }}>Poppy</Typography>
             <AudioPlayer src={'https://joakimwennergren.se/poppy.wav'}
             />
           </Box>
-          <Box sx={{}}>
+          <Box sx={{ marginBottom: 2 }}>
             <Typography component={'p'} sx={{ fontWeight: "bold", marginBottom: 1 }}>Technobeat</Typography>
             <AudioPlayer src={'https://joakimwennergren.se/technobeat.wav'}
+            />
+          </Box>
+          <Box sx={{}}>
+            <Typography component={'p'} sx={{ fontWeight: "bold", marginBottom: 1 }}>Rich on water</Typography>
+            <AudioPlayer src={'https://joakimwennergren.se/rich_on_water.wav'}
             />
           </Box>
           {/*}
