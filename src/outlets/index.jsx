@@ -57,7 +57,7 @@ export default function Index() {
         },
         {
             title: "Ensure",
-            src: "https://joakimwennergren.se/ensure.wav"
+            src: "https://joakimwennergren.se/Ensure.wav"
         },
         {
             title: "Moongatan",
