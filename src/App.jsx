@@ -85,7 +85,7 @@ export default function BasicGrid() {
               <Typography component={'p'}>En spelmotor skriven från grunden i C++. Scriptbar i C# och med vulkan API</Typography>
             </Paper>
             <Paper sx={{ padding: 2, marginBottom: 2 }}>
-              <Typography component={'p'} sx={{ fontWeight: "bold" }}>Phone</Typography>
+              <Typography component={'p'} sx={{ fontWeight: "bold" }}>Telefon</Typography>
               <img src={Phone} style={{ width: "100%", marginBottom: 10 }}></img>
               <Typography component={'p'}>En ombyggd telefon. 2G.</Typography>
             </Paper>
@@ -95,7 +95,7 @@ export default function BasicGrid() {
               <Typography component={'p'}></Typography>
             </Paper>
             <Paper sx={{ padding: 2, marginBottom: 2 }}>
-              <Typography component={'p'} sx={{ fontWeight: "bold" }}>LED Matrix</Typography>
+              <Typography component={'p'} sx={{ fontWeight: "bold" }}>LED Matris</Typography>
               <img src={LedMatrix} style={{ width: "100%", marginBottom: 10 }}></img>
               <Typography component={'p'}></Typography>
             </Paper>
@@ -126,7 +126,7 @@ export default function BasicGrid() {
                 <Typography component={'p'}>En spelmotor skriven från grunden i C++. Scriptbar i C# och med vulkan API</Typography>
               </Paper>
               <Paper sx={{ padding: 2, marginBottom: 2 }}>
-                <Typography component={'p'} sx={{ fontWeight: "bold" }}>Phone</Typography>
+                <Typography component={'p'} sx={{ fontWeight: "bold" }}>Telefon</Typography>
                 <img src={Phone} style={{ width: "100%", marginBottom: 10 }}></img>
                 <Typography component={'p'}>En ombyggd telefon. 2G.</Typography>
               </Paper>
@@ -136,7 +136,7 @@ export default function BasicGrid() {
                 <Typography component={'p'}></Typography>
               </Paper>
               <Paper sx={{ padding: 2, marginBottom: 2 }}>
-                <Typography component={'p'} sx={{ fontWeight: "bold" }}>LED Matrix</Typography>
+                <Typography component={'p'} sx={{ fontWeight: "bold" }}>LED Matris</Typography>
                 <img src={LedMatrix} style={{ width: "100%", marginBottom: 10 }}></img>
                 <Typography component={'p'}></Typography>
               </Paper>
