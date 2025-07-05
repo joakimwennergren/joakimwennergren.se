@@ -92,12 +92,12 @@ export default function BasicGrid() {
             <Paper sx={{ padding: 2, marginBottom: 2 }}>
               <Typography component={'p'} sx={{ fontWeight: "bold" }}>Smart display</Typography>
               <img src={SmartDisplay} style={{ width: "100%", marginBottom: 10 }}></img>
-              <Typography component={'p'}></Typography>
+              <Typography component={'p'}>En skärm med ram som visar väder och tid</Typography>
             </Paper>
             <Paper sx={{ padding: 2, marginBottom: 2 }}>
               <Typography component={'p'} sx={{ fontWeight: "bold" }}>LED Matris</Typography>
               <img src={LedMatrix} style={{ width: "100%", marginBottom: 10 }}></img>
-              <Typography component={'p'}></Typography>
+              <Typography component={'p'}>Enkel led matris</Typography>
             </Paper>
             {/*}
               <Stack spacing={2}>
