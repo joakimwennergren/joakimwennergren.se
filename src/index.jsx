@@ -3,13 +3,18 @@ import {
   RouterProvider,
 } from "react-router";
 import ReactDOM from 'react-dom/client';
-import App from './App';
-import './index.css';
+import Layout from './Layout';
+import Index from './outlets/index';
+import Projects from './outlets/projects';
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <App />,
+    // no path on this parent route, just the component
+    Component: Layout,
+    children: [
+      { index: true, Component: Index },
+      { path: "projects/:projectId", Component: Projects },
+    ],
   },
 ]);
 
