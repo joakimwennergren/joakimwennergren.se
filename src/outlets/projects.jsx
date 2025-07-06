@@ -1,6 +1,7 @@
 import { useParams } from "react-router";
 import useMediaQuery from '@mui/material/useMediaQuery'
 import Snusdosa from './projects/snusdosa';
+import Entropy from './projects/entropy';
 
 
 export default function Projects() {
@@ -11,6 +12,7 @@ export default function Projects() {
     return (
         <>
             {projectId === "smart-snusdosa" && <Snusdosa />}
+            {projectId === "entropy-gameengine" && <Entropy />}
         </>
     );
 }

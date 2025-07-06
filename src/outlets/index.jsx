@@ -26,13 +26,13 @@ export default function Index() {
         },
         {
             title: "Entropy spelmotor",
-            description: "En spelmotor skriven från grunden i C++. Scriptbar i C# och med vulkan API",
+            description: "Spelmotorn är ett långsiktigt utvecklingsprojekt som kombinerar hög prestanda, plattformsoberoende och ett modernt komponentbaserat arkitekturtänk.",
             image: EntropyOld,
-            link: "https://joakimwennergren.se/projects/entropy-gamee-engine",
+            link: "https://joakimwennergren.se/projects/entropy-gameengine",
         },
         {
             title: "Telefon",
-            description: "En ombyggd telefon. 2G.",
+            description: "En ombyggd telefon. med ett 2G modem och en atmel MCU. Kan ta emot och ringa samtal.",
             image: Phone,
             link: "https://joakimwennergren.se/projects/phone",
         },

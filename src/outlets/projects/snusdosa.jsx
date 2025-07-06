@@ -28,6 +28,16 @@ export default function SnusDosa() {
                 </ul>
                 <Typography component={'h1'} sx={{ marginBottom: 2, fontWeight: "bold", }}>Användningsområde</Typography>
                 <Typography component={'p'} sx={{ marginBottom: 2 }}>Produkten riktar sig till personer som vill trappa ned sitt snusande eller skapa mer struktur i sin konsumtion. Den smarta snusdosan kombinerar teknik med beteendeförändring för att ge användaren bättre kontroll över sina vanor.</Typography>
+                <Typography component={'h1'} sx={{ marginBottom: 2, fontWeight: "bold", }}>Framtidsplaner</Typography>
+
+                <Typography component={'p'} sx={{ marginBottom: 2 }}>För att förbättra både användarupplevelsen och produktens tillförlitlighet planeras flera uppgraderingar av den smarta snusdosan:</Typography>
+                <ul>
+                    <li><b>Hall-effektsensor istället för mikrobrytare</b> -
+                        För att detektera om locket är öppet eller stängt planeras en övergång från mekanisk mikrobrytare till en kontaktlös hall-effektsensor. Detta minskar slitage och ökar livslängden.</li>
+                    <li><b>Byte av Bluetooth SoC</b> - En mer kraftfull och integrerad Bluetooth-lösning utvärderas för att ge förbättrad räckvidd, stabilare uppkoppling och bättre energieffektivitet.</li>
+                    <li><b>Integrerad lösning utan separat MCU</b> - Genom att ersätta den separata Atmel XMEGA 16 med ett mer kapabelt SoC planeras en förenklad elektronikdesign. Detta minskar komponentkostnad, komplexitet och strömförbrukning.</li>
+                    <li><b>Förbättrad mekanisk konstruktion</b> - Den fysiska utformningen av dosan ses över för att skapa en mer robust och tillverkningsvänlig konstruktion med förbättrad känsla i låsmekanismen.</li>
+                </ul>
                 <Typography component={'h1'} sx={{ marginBottom: 2, fontWeight: "bold" }}>Bilder</Typography>
                 <img src={Snusdosan1} style={{ width: "33%" }}></img>
                 <img src={Snusdosan2} style={{ width: "33%" }}></img>
