@@ -64,6 +64,14 @@ export default function Index() {
             src: "https://joakimwennergren.se/moongatan.wav"
         },
         {
+            title: "Tourey kit",
+            src: "https://joakimwennergren.se/tourey_kit.wav"
+        },
+        {
+            title: "Bam",
+            src: "https://joakimwennergren.se/bam.wav"
+        },
+        {
             title: "Poppy",
             src: "https://joakimwennergren.se/poppy.wav"
         },
