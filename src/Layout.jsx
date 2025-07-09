@@ -67,7 +67,7 @@ export default function Layout() {
     }
 
     return (
-      <Box sx={{ fontSize: 14, textAlign: 'center', padding: 2, }}>
+      <Box sx={{ fontSize: 14, textAlign: 'center', padding: 2, borderTop: isMobile ? '1px solid #ccc' : "none", backgroundColor: '#f5f5f5' }}>
         Copyright &copy; {CurrentYear()} Joakim Wennergren
       </Box>
     )

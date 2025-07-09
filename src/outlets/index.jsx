@@ -89,6 +89,7 @@ export default function Index() {
         const ProjectsContent = () => {
             return (
                 <>
+                    <Typography variant='h5' sx={{ fontWeight: "bold", marginBottom: 2, color: "#444" }}>Projekt</Typography>
                     {currentItems.map((item, index) => (
                         <Box sx={{ padding: 2, marginBottom: 2, border: "solid 1px #ddd", borderRadius: 1 }} key={"project+" + index}>
                             <a href={item.link} style={{ color: "#c951a7", textDecorationStyle: "dashed" }}><Typography component={'p'} sx={{ fontWeight: "bold" }}>{item.title}</Typography></a>
@@ -119,7 +120,7 @@ export default function Index() {
         if (isMobile) {
             return (
                 <>
-                    <Box sx={{ padding: 2, }}>
+                    <Box sx={{ padding: 2, backgroundColor: '#f5f5f5' }}>
                         {ProjectsContent()}
                     </Box >
                     <Box sx={{ padding: 2, }}>
