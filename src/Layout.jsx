@@ -35,10 +35,10 @@ export default function Layout() {
     if (isMobile) {
       return (
         <Grid container>
-          <Grid size={6} sx={{ padding: 2, borderBottom: '1px solid #ccc', display: 'flex', alignItems: 'center', backgroundColor: '#f5f5f5' }}>
+          <Grid size={5} sx={{ padding: 2, borderBottom: '1px solid #ccc', display: 'flex', alignItems: 'center', backgroundColor: '#f5f5f5' }}>
             <Typography variant='h1' sx={{ fontWeight: "bold", color: "#444", fontSize: 22, whiteSpace: "nowrap", zIndex: 999 }}>Joakim Wennergren</Typography>
           </Grid>
-          <Grid size={6} sx={{ textAlign: 'center', adding: { xs: 1, md: 4 }, borderBottom: '1px solid #ccc', backgroundColor: '#f5f5f5' }}>
+          <Grid size={5} sx={{ textAlign: 'center', adding: { xs: 1, md: 4 }, borderBottom: '1px solid #ccc', backgroundColor: '#f5f5f5' }}>
           </Grid>
         </Grid>
 
