@@ -20,6 +20,17 @@ export default function Projects() {
         );
     }
 
+    const RenderProject = () => {
+        switch (projectId) {
+            case "smart-snusdosa":
+                return <Snusdosa />;
+            case "entropy-gameengine":
+                return <Entropy />;
+            default:
+                return <Typography variant="h4">Projektet finns inte.</Typography>;
+        }
+    }
+
     return (
         <>
             <Grid container>
@@ -29,8 +40,7 @@ export default function Projects() {
                     padding: 6, borderBottom: '1px solid #ccc', borderRight: '1px solid #ccc'
                 }}>
                     <a href="https://joakimwennergren.se" style={{ color: "#c951a7", textDecorationStyle: "dashed" }}><Typography component={'p'} sx={{ fontWeight: "bold", marginBottom: 2, }}>Gå tillbaka till startsidan</Typography></a>
-                    {projectId === "smart-snusdosa" && <Snusdosa />}
-                    {projectId === "entropy-gameengine" && <Entropy />}
+                    {RenderProject()}
                 </Grid>
                 <Grid size={1} sx={{ textAlign: 'center', padding: 2, borderBottom: '1px solid #ccc', borderRight: '1px solid #ccc', }}>
                 </Grid>

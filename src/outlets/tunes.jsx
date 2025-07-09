@@ -13,6 +13,10 @@ export default function Tunes() {
     const RenderPlayer = () => {
         const cleanTuneId = tuneId.replace(/\s+/g, '');
 
+        if (!tunes.find((tune) => tune.title.replace(/\s+/g, '').toLowerCase() == cleanTuneId.toLocaleLowerCase())) {
+            return <Typography variant="h4">Låten finns inte.</Typography>;
+        }
+
         return tunes.map((tune, index) => {
             console.log("https://joakimwennergren.se/" + tune.title.replace(/\s+/g, '').toLowerCase() + ".wav")
             if (tune.title.replace(/\s+/g, '').toUpperCase() === cleanTuneId.toUpperCase()) {
