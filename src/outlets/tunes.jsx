@@ -1,5 +1,6 @@
 import { useParams } from "react-router";
-import { Grid, Typography } from '@mui/material';
+import { Grid, Typography, Box } from '@mui/material';
+import useMediaQuery from '@mui/material/useMediaQuery'
 import tunes from '../data/tunes';
 import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
@@ -7,6 +8,7 @@ import 'react-h5-audio-player/lib/styles.css';
 export default function Tunes() {
 
     let { tuneId } = useParams();
+    const isMobile = useMediaQuery('(max-width: 600px)');
 
     const RenderPlayer = () => {
         const cleanTuneId = tuneId.replace(/\s+/g, '');
@@ -19,6 +21,16 @@ export default function Tunes() {
                 )
             }
         });
+    }
+
+    if (isMobile) {
+        return (
+            <Box sx={{ padding: 2 }}>
+                <a href="https://joakimwennergren.se" style={{ color: "#c951a7", textDecorationStyle: "dashed" }}><Typography component={'p'} sx={{ fontWeight: "bold", marginBottom: 2, }}>Gå tillbaka till startsidan</Typography></a>
+                <Typography variant='h4' sx={{ fontWeight: "bold", marginBottom: 2, color: "#444" }}>{tuneId}</Typography>
+                {RenderPlayer()}
+            </Box>
+        );
     }
 
     return (
