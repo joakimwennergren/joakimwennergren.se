@@ -60,9 +60,9 @@ export default function Index() {
         } else {
             return (
                 <Grid container>
-                    <Grid size={2} sx={{ textAlign: 'center', borderBottom: '1px solid #ccc', borderRight: '1px solid #ccc', display: 'flex', alignItems: 'center', }}>
+                    <Grid size={1} sx={{ textAlign: 'center', borderBottom: '1px solid #ccc', borderRight: '1px solid #ccc', display: 'flex', alignItems: 'center', }}>
                     </Grid>
-                    <Grid size={8} sx={{
+                    <Grid size={10} sx={{
                         padding: 6, borderBottom: '1px solid #ccc', borderRight: '1px solid #ccc'
                     }}>
                         {content()}
@@ -77,7 +77,7 @@ export default function Index() {
                             </Box>
                         </Box>
                     </Grid>
-                    <Grid size={2} sx={{ textAlign: 'center', padding: 2, borderBottom: '1px solid #ccc', borderRight: '1px solid #ccc', }}>
+                    <Grid size={1} sx={{ textAlign: 'center', padding: 2, borderBottom: '1px solid #ccc', borderRight: '1px solid #ccc', }}>
                     </Grid>
                 </Grid>
             )
@@ -129,16 +129,16 @@ export default function Index() {
             )
         } else {
             return (
-                <Grid container spacing={0}>
-                    <Grid size={2} sx={{ textAlign: 'center', borderBottom: '1px solid #ccc', borderRight: '1px solid #ccc', display: 'flex', alignItems: 'center', }}>
+                <Grid container>
+                    <Grid size={1} sx={{ textAlign: 'center', borderBottom: '1px solid #ccc', borderRight: '1px solid #ccc', display: 'flex', alignItems: 'center', }}>
                     </Grid>
-                    <Grid size={4} sx={{ padding: 6, borderBottom: '1px solid #ccc', borderRight: '1px solid #ccc' }}>
+                    <Grid size={5} sx={{ padding: 6, borderBottom: '1px solid #ccc', borderRight: '1px solid #ccc' }}>
                         {ProjectsContent()}
                     </Grid>
-                    <Grid size={4} sx={{ padding: 6, borderBottom: '1px solid #ccc', borderRight: '1px solid #ccc' }}>
+                    <Grid size={5} sx={{ padding: 6, borderBottom: '1px solid #ccc', borderRight: '1px solid #ccc' }}>
                         {MusicContents()}
                     </Grid>
-                    <Grid size={'grow'} spacing={10} sx={{ textAlign: 'center', padding: 2, borderBottom: '1px solid #ccc', borderRight: '1px solid #ccc' }}>
+                    <Grid size={1} spacing={10} sx={{ textAlign: 'center', padding: 2, borderBottom: '1px solid #ccc', borderRight: '1px solid #ccc' }}>
                     </Grid>
                 </Grid>
             )
