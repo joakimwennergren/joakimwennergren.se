@@ -108,7 +108,7 @@ export default function Index() {
                     {currentMusicItems.map((item, index) => (
                         <Box sx={{ marginBottom: 2, borderBottom: "solid 1px #ddd", paddingBottom: 2 }} key={"tune+" + index}>
                             <a href={"/tunes/" + item.title} style={{ color: "#c951a7", textDecorationStyle: "dashed" }}><Typography component={'p'} sx={{ fontWeight: "bold", marginBottom: 1 }}>{item.title}</Typography></a>
-                            <AudioPlayer showJumpControls={false} src={item.src} />
+                            <AudioPlayer showJumpControls={false} src={"https://joakimwennergren.se/" + item.title.replace(/\s+/g, '').toLowerCase() + ".wav"} />
                         </Box >
                     ))
                     }
