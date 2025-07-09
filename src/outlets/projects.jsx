@@ -10,15 +10,6 @@ export default function Projects() {
     let { projectId } = useParams();
     const isMobile = useMediaQuery('(max-width: 800px)');
 
-    if (isMobile) {
-        return (
-            <Box sx={{ padding: 2 }}>
-                <a href="https://joakimwennergren.se" style={{ color: "#c951a7", textDecorationStyle: "dashed" }}><Typography component={'p'} sx={{ fontWeight: "bold", marginBottom: 2, }}>Gå tillbaka till startsidan</Typography></a>
-                {RenderProject()}
-            </Box>
-        );
-    }
-
     const RenderProject = () => {
         switch (projectId) {
             case "smart-snusdosa":
@@ -28,6 +19,15 @@ export default function Projects() {
             default:
                 return <Typography variant="h4">Projektet finns inte.</Typography>;
         }
+    }
+
+    if (isMobile) {
+        return (
+            <Box sx={{ padding: 2 }}>
+                <a href="https://joakimwennergren.se" style={{ color: "#c951a7", textDecorationStyle: "dashed" }}><Typography component={'p'} sx={{ fontWeight: "bold", marginBottom: 2, }}>Gå tillbaka till startsidan</Typography></a>
+                {RenderProject()}
+            </Box>
+        );
     }
 
     return (
