@@ -12,10 +12,10 @@ export default function Tunes() {
         const cleanTuneId = tuneId.replace(/\s+/g, '');
 
         return tunes.map((tune, index) => {
-
+            console.log("https://joakimwennergren.se/" + tune.title.replace(/\s+/g, '').toLowerCase() + ".wav")
             if (tune.title.replace(/\s+/g, '').toUpperCase() === cleanTuneId.toUpperCase()) {
                 return (
-                    <AudioPlayer key={"tune" + index} showJumpControls={false} src={"https://joakimwennergren.se/" + tune.title.toLowerCase() + ".wav"} />
+                    <AudioPlayer key={"tune" + index} showJumpControls={false} src={"https://joakimwennergren.se/" + tune.title.replace(/\s+/g, '').toLowerCase() + ".wav"} />
                 )
             }
         });
