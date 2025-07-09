@@ -8,7 +8,7 @@ import 'react-h5-audio-player/lib/styles.css';
 export default function Tunes() {
 
     let { tuneId } = useParams();
-    const isMobile = useMediaQuery('(max-width: 600px)');
+    const isMobile = useMediaQuery('(max-width: 800px)');
 
     const RenderPlayer = () => {
         const cleanTuneId = tuneId.replace(/\s+/g, '');

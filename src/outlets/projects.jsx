@@ -8,7 +8,7 @@ import Entropy from './projects/entropy';
 export default function Projects() {
 
     let { projectId } = useParams();
-    const isMobile = useMediaQuery('(max-width: 600px)');
+    const isMobile = useMediaQuery('(max-width: 800px)');
 
     if (isMobile) {
         return (
