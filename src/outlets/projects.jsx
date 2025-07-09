@@ -14,8 +14,7 @@ export default function Projects() {
         return (
             <Box sx={{ padding: 2 }}>
                 <a href="https://joakimwennergren.se" style={{ color: "#c951a7", textDecorationStyle: "dashed" }}><Typography component={'p'} sx={{ fontWeight: "bold", marginBottom: 2, }}>Gå tillbaka till startsidan</Typography></a>
-                {projectId === "smart-snusdosa" && <Snusdosa />}
-                {projectId === "entropy-gameengine" && <Entropy />}
+                {RenderProject()}
             </Box>
         );
     }
