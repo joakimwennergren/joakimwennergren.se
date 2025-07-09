@@ -6,11 +6,10 @@ import {
 } from '@mui/material';
 import { Outlet } from "react-router";
 import useMediaQuery from '@mui/material/useMediaQuery'
-import './App.css';
 
 export default function Layout() {
 
-  const isMobile = useMediaQuery('(max-width: 600px)');
+  const isMobile = useMediaQuery('(max-width: 800px)');
 
   const Header = () => {
     return (
@@ -36,10 +35,10 @@ export default function Layout() {
     if (isMobile) {
       return (
         <Grid container>
-          <Grid size={6} sx={{ padding: 2, borderBottom: '1px solid #ccc', display: 'flex', alignItems: 'center', }}>
+          <Grid size={6} sx={{ padding: 2, borderBottom: '1px solid #ccc', display: 'flex', alignItems: 'center', backgroundColor: '#f5f5f5' }}>
             <Typography variant='h1' sx={{ fontWeight: "bold", color: "#444", fontSize: 22, whiteSpace: "nowrap" }}>Joakim Wennergren</Typography>
           </Grid>
-          <Grid size={6} sx={{ textAlign: 'center', adding: { xs: 1, md: 4 }, borderBottom: '1px solid #ccc', }}>
+          <Grid size={6} sx={{ textAlign: 'center', adding: { xs: 1, md: 4 }, borderBottom: '1px solid #ccc', backgroundColor: '#f5f5f5' }}>
           </Grid>
         </Grid>
 
@@ -47,14 +46,14 @@ export default function Layout() {
     } else {
       return (
         <Grid container>
-          <Grid size={2} sx={{ textAlign: 'center', padding: 4, borderBottom: '1px solid #ccc', borderRight: '1px solid #ccc', display: 'flex', alignItems: 'center' }}>
+          <Grid size={2} sx={{ textAlign: 'center', padding: 4, borderBottom: '1px solid #ccc', borderRight: '1px solid #ccc', display: 'flex', alignItems: 'center', backgroundColor: '#f5f5f5' }}>
           </Grid>
-          <Grid size={{ xs: 3, md: 3.5 }} sx={{ padding: { xs: 1, md: 4 }, borderBottom: '1px solid #ccc', display: 'flex', alignItems: 'center', }}>
+          <Grid size={4} sx={{ zIndex: 999, padding: 2, borderBottom: '1px solid #ccc', borderRight: "1px solid #ccc", display: 'flex', alignItems: 'center', backgroundColor: '#f5f5f5' }}>
             <Typography variant='h1' sx={{ marginLeft: 2, fontWeight: "bold", color: "#444", fontSize: 32, whiteSpace: "nowrap" }}>Joakim Wennergren</Typography>
           </Grid>
-          <Grid size={{ xs: 4.2, md: 4.5 }} sx={{ padding: { xs: 1, md: 4 }, borderBottom: '1px solid #ccc', borderRight: '1px solid #ccc', display: 'flex', alignItems: 'center', }}>
+          <Grid size={4} sx={{ padding: 2, borderBottom: '1px solid #ccc', borderRight: '1px solid #ccc', display: 'flex', alignItems: 'center', backgroundColor: '#f5f5f5' }}>
           </Grid>
-          <Grid size={'grow'} sx={{ textAlign: 'center', adding: { xs: 1, md: 4 }, borderBottom: '1px solid #ccc', }}>
+          <Grid size={2} sx={{ textAlign: 'center', adding: 2, borderBottom: '1px solid #ccc', backgroundColor: '#f5f5f5' }}>
           </Grid>
         </Grid>
       )
@@ -62,9 +61,14 @@ export default function Layout() {
   }
 
   const Footer = () => {
+
+    const CurrentYear = () => {
+      return new Date().getFullYear();
+    }
+
     return (
-      <Box sx={{ fontSize: 14, textAlign: 'center', padding: 4, }}>
-        Copyright &copy; <script>document.write(new Date().getFullYear());</script> Joakim Wennergren
+      <Box sx={{ fontSize: 14, textAlign: 'center', padding: 2, }}>
+        Copyright &copy; {CurrentYear()} Joakim Wennergren
       </Box>
     )
   }
