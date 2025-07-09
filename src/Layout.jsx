@@ -24,7 +24,7 @@ export default function Layout() {
           padding: 1, borderBottom: '1px solid #ccc', borderRight: '1px solid #ccc', display: 'flex', alignItems: 'center',
         }}>
         </Grid>
-        <Grid size={1} sx={{ textAlign: 'center', padding: 1, borderBottom: '1px solid #ccc', borderRight: '1px solid #ccc' }}>
+        <Grid size={'grow'} sx={{ textAlign: 'center', padding: 1, borderBottom: '1px solid #ccc', borderRight: '1px solid #ccc' }}>
           <Box></Box>
         </Grid>
       </Grid>
@@ -38,7 +38,7 @@ export default function Layout() {
           <Grid size={5} sx={{ padding: 2, borderBottom: '1px solid #ccc', display: 'flex', alignItems: 'center', backgroundColor: '#f5f5f5' }}>
             <Typography variant='h1' sx={{ fontWeight: "bold", color: "#444", fontSize: 22, whiteSpace: "nowrap", zIndex: 999 }}>Joakim Wennergren</Typography>
           </Grid>
-          <Grid size={5} sx={{ textAlign: 'center', adding: { xs: 1, md: 4 }, borderBottom: '1px solid #ccc', backgroundColor: '#f5f5f5' }}>
+          <Grid size={"grow"} sx={{ textAlign: 'center', adding: { xs: 1, md: 4 }, borderBottom: '1px solid #ccc', backgroundColor: '#f5f5f5' }}>
           </Grid>
         </Grid>
 
