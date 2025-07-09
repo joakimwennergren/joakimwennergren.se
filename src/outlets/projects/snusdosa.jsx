@@ -46,35 +46,9 @@ export default function SnusDosa() {
         )
     }
 
-    const Content = () => {
-        if (isMobile) {
-            return (
-                <Box sx={{ padding: 2, borderBottom: '1px solid #ccc' }}>
-                    {Description()}
-                </Box>
-            )
-        } else {
-            return (
-                <Grid container >
-                    <Grid size={2} sx={{ textAlign: 'center', borderBottom: '1px solid #ccc', borderRight: '1px solid #ccc', display: 'flex', alignItems: 'center', }}>
-                    </Grid>
-                    <Grid size={8} sx={{
-                        padding: 6, borderBottom: '1px solid #ccc', borderRight: '1px solid #ccc'
-                    }}>
-                        {Description()}
-                    </Grid>
-
-                    <Grid size={'grow'} sx={{ textAlign: 'center', padding: 2, borderBottom: '1px solid #ccc', borderRight: '1px solid #ccc', }}>
-                        <Box></Box>
-                    </Grid>
-                </Grid >
-            )
-        }
-    }
-
     return (
         <>
-            <Content />
+            {Description()}
         </>
     );
 }

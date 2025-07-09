@@ -21,7 +21,6 @@ export default function Tunes() {
         });
     }
 
-
     return (
         <>
             <Grid container>
@@ -30,13 +29,13 @@ export default function Tunes() {
                 <Grid size={8} sx={{
                     padding: 6, borderBottom: '1px solid #ccc', borderRight: '1px solid #ccc'
                 }}>
+                    <a href="https://joakimwennergren.se" style={{ color: "#c951a7", textDecorationStyle: "dashed" }}><Typography component={'p'} sx={{ fontWeight: "bold", marginBottom: 2, }}>Gå tillbaka till startsidan</Typography></a>
                     <Typography variant='h4' sx={{ fontWeight: "bold", marginBottom: 2, color: "#444" }}>{tuneId}</Typography>
                     {RenderPlayer()}
                 </Grid>
                 <Grid size={2} sx={{ textAlign: 'center', padding: 2, borderBottom: '1px solid #ccc', borderRight: '1px solid #ccc', }}>
                 </Grid>
-            </Grid >
-
+            </Grid>
         </>
     );
 }
